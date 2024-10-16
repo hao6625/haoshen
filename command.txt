@@ -1,0 +1,5 @@
+git clone https://github.com/csenw/cca3.git && cd cca3
+sudo chmod -R 777 nbs/
+docker-compose up -d 
+  docker ps
+docker exec <container_id> hdfs dfs -put /home/nbs/all_verbs.txt /all_verbs.txt
