@@ -1,5 +1,9 @@
 git clone https://github.com/csenw/cca3.git && cd cca3
+
 sudo chmod -R 777 nbs/
 docker-compose up -d 
-  docker ps
-docker exec <container_id> hdfs dfs -put /home/nbs/all_verbs.txt /all_verbs.txt
+
+docker ps
+docker exec <container_id> hdfs dfs -put 2022.csv/2022.csv
+docker exec <container_id> hdfs dfs -put 2023.csv/2023.csv
+docker exec <container_id> hdfs dfs -put 2024.csv/2024.csv
