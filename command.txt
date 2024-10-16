@@ -1,5 +1,7 @@
 git clone https://github.com/hao6625/haoshen.git
 
+cd haoshen
+
 sudo chmod -R 777 nbs/
 docker-compose up -d 
 
